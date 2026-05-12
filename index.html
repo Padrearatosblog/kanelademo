@@ -2,141 +2,267 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
   <title>Kanela | Café & Brunch</title>
 
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css"/>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <header class="top-header">
-    <a href="#" class="brand">Kanela</a>
+  <header class="header">
+
+    <a href="#" class="logo">Kanela</a>
 
     <nav>
       <a href="#especialidades">Carta</a>
       <a href="#ubicacion">Ubicación</a>
-      <a href="https://wa.me/34NUMEROAQUI" class="reserve-btn">Reservar</a>
+
+      <a href="https://wa.me/34NUMEROAQUI" class="btn-header">
+        Reservar
+      </a>
     </nav>
+
   </header>
 
   <main>
 
+    <!-- HERO -->
+
     <section class="hero">
-      <div class="hero-img">
-        <img src="img/hero.jpg" alt="Interior de Kanela">
-      </div>
+
+      <div class="hero-overlay"></div>
+
+      <img src="img/hero.jpg" alt="Kanela" class="hero-bg">
 
       <div class="hero-content">
-        <span>Café · Brunch · Pamplona</span>
-        <h1>Un rincón bonito para disfrutar sin prisa.</h1>
+
+        <span class="subtitle">
+          Café · Brunch · Pamplona
+        </span>
+
+        <h1>
+          Un sitio bonito<br>
+          para disfrutar<br>
+          sin prisa.
+        </h1>
+
         <p>
-          Kanela es café, tostadas especiales y un ambiente cálido pensado
-          para esos momentos que saben mejor con calma.
+          Café de especialidad, brunch cuidado y un ambiente cálido
+          pensado para disfrutar de los pequeños momentos.
         </p>
 
         <div class="hero-buttons">
-          <a href="https://wa.me/34NUMEROAQUI" class="btn">Reservar mesa</a>
-          <a href="#especialidades" class="btn btn-outline">Ver especialidades</a>
+
+          <a href="https://wa.me/34NUMEROAQUI" class="btn-main">
+            Reservar mesa
+          </a>
+
+          <a href="#especialidades" class="btn-secondary">
+            Ver carta
+          </a>
+
         </div>
+
       </div>
+
     </section>
 
-    <section class="intro">
-      <span class="section-label">Nuestra esencia</span>
-      <h2>Natural, cálido y con mucho detalle.</h2>
+    <!-- INTRO -->
+
+    <section class="intro reveal">
+
+      <span class="section-tag">
+        Nuestra esencia
+      </span>
+
+      <h2>
+        Natural, cálido y con mucho detalle.
+      </h2>
+
       <p>
-        Un espacio con alma tranquila, sabores cuidados y una estética pensada
-        para que cada visita se sienta especial.
+        Kanela es uno de esos lugares donde todo transmite calma:
+        el café, las tostadas, la luz, los colores y el ambiente.
       </p>
+
     </section>
 
-    <section class="featured" id="especialidades">
-      <div class="section-heading">
-        <span class="section-label">Especialidades</span>
-        <h2>Lo que apetece en Kanela</h2>
+    <!-- ESPECIALIDADES -->
+
+    <section class="specials" id="especialidades">
+
+      <div class="section-head reveal">
+
+        <span class="section-tag">
+          Especialidades
+        </span>
+
+        <h2>
+          Lo que apetece en Kanela
+        </h2>
+
       </div>
 
-      <article class="plate plate-large">
-        <div class="plate-img">
+      <!-- AHUMADA -->
+
+      <article class="featured-card reveal">
+
+        <div class="featured-image">
           <img src="img/ahumada.jpg" alt="Ahumada">
         </div>
-        <div class="plate-info">
+
+        <div class="featured-info">
+
           <span>Tostada especial</span>
+
           <h3>Ahumada</h3>
+
           <p>
-            Una propuesta fresca, elegante y llena de sabor. Perfecta para
-            empezar el día o disfrutar de un brunch con calma.
+            Fresca, elegante y equilibrada. Perfecta para un brunch tranquilo.
           </p>
+
         </div>
+
       </article>
 
-      <div class="plate-grid">
-        <article class="plate">
-          <div class="plate-img">
-            <img src="img/dijon.jpg" alt="Dijon">
-          </div>
-          <div class="plate-info">
+      <!-- GRID -->
+
+      <div class="grid-cards">
+
+        <article class="small-card reveal">
+
+          <img src="img/dijon.jpg" alt="Dijon">
+
+          <div class="small-info">
+
             <span>Brunch</span>
+
             <h3>Dijon</h3>
-            <p>Equilibrada, sabrosa y con ese punto diferente que la hace especial.</p>
+
+            <p>
+              Una mezcla intensa y delicada al mismo tiempo.
+            </p>
+
           </div>
+
         </article>
 
-        <article class="plate">
-          <div class="plate-img">
-            <img src="img/caprichosa.jpg" alt="Caprichosa">
-          </div>
-          <div class="plate-info">
+        <article class="small-card reveal">
+
+          <img src="img/caprichosa.jpg" alt="Caprichosa">
+
+          <div class="small-info">
+
             <span>Favorita</span>
+
             <h3>Caprichosa</h3>
-            <p>Una mezcla delicada, cremosa y con personalidad propia.</p>
+
+            <p>
+              Cremosa, bonita y con personalidad propia.
+            </p>
+
           </div>
+
         </article>
+
       </div>
+
     </section>
 
-    <section class="drink-section">
+    <!-- DRINK -->
+
+    <section class="drink reveal">
+
       <div class="drink-text">
-        <span class="section-label">Bebida especial</span>
-        <h2>Pink Kanela</h2>
+
+        <span class="section-tag">
+          Bebida especial
+        </span>
+
+        <h2>
+          Pink Kanela
+        </h2>
+
         <p>
-          Una bebida fresca, visual y diferente. De esas que entran por los ojos
-          y se disfrutan todavía más en buena compañía.
+          Fresca, visual y diferente. Una bebida hecha para disfrutar
+          del momento.
         </p>
-        <a href="https://wa.me/34NUMEROAQUI" class="btn">Quiero probarla</a>
+
+        <a href="https://wa.me/34NUMEROAQUI" class="btn-main">
+          Reservar
+        </a>
+
       </div>
 
-      <div class="drink-img">
+      <div class="drink-image">
+
         <img src="img/pink-kanela.jpg" alt="Pink Kanela">
+
       </div>
+
     </section>
 
-    <section class="quote">
-      <p>“Café rico, ambiente bonito y platos hechos para disfrutar.”</p>
+    <!-- FRASE -->
+
+    <section class="quote reveal">
+
+      <p>
+        “Café rico, ambiente bonito y brunch hecho con cariño.”
+      </p>
+
     </section>
 
-    <section class="location" id="ubicacion">
-      <div>
-        <span class="section-label">Dónde estamos</span>
-        <h2>Ven a Kanela</h2>
-        <p>C/ Fuente del Hierro 21, trasera · Pamplona</p>
-        <p>Lunes a viernes: 8:30 - 13:30 / 16:30 - 20:00</p>
-        <p>Sábado y domingo: 9:30 - 14:30 / 17:00 - 20:00</p>
+    <!-- UBICACION -->
+
+    <section class="location reveal" id="ubicacion">
+
+      <div class="location-box">
+
+        <span class="section-tag">
+          Visítanos
+        </span>
+
+        <h2>
+          Kanela Café
+        </h2>
+
+        <p>
+          C/ Fuente del Hierro 21, trasera · Pamplona
+        </p>
+
+        <p>
+          Lunes a viernes: 8:30 - 13:30 / 16:30 - 20:00
+        </p>
+
+        <p>
+          Sábado y domingo: 9:30 - 14:30 / 17:00 - 20:00
+        </p>
 
         <div class="location-buttons">
-          <a href="https://wa.me/34NUMEROAQUI" class="btn">Reservar por WhatsApp</a>
-          <a href="#" class="btn btn-outline dark">Ver en Google Maps</a>
+
+          <a href="https://wa.me/34NUMEROAQUI" class="btn-main">
+            Reservar por WhatsApp
+          </a>
+
+          <a href="#" class="btn-secondary dark">
+            Google Maps
+          </a>
+
         </div>
+
       </div>
+
     </section>
 
   </main>
 
   <script src="js/script.js"></script>
+
 </body>
 </html>
