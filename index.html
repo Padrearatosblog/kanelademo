@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Kanela | Café & Brunch en Pamplona</title>
+
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -11,7 +13,7 @@
   <header class="hero">
     <nav class="navbar">
       <div class="logo">kanela</div>
-      <button class="menu-btn">☰</button>
+      <button class="menu-btn" aria-label="Abrir menú">☰</button>
     </nav>
 
     <div class="hero-content">
@@ -39,99 +41,104 @@
     </div>
   </header>
 
-  <section class="essence">
-    <p class="section-tag">NUESTRA ESENCIA</p>
-    <h2>Más que café, una experiencia</h2>
+  <main>
 
-    <div class="cards">
-      <article class="card">
-        <span>☕</span>
-        <h3>Café con calma</h3>
-        <p>Un espacio pensado para disfrutar sin prisas.</p>
-      </article>
+    <section class="essence">
+      <p class="section-tag">NUESTRA ESENCIA</p>
+      <h2>Más que café, una experiencia</h2>
 
-      <article class="card">
-        <span>🥑</span>
-        <h3>Brunch saludable</h3>
-        <p>Platos equilibrados, frescos y con intención.</p>
-      </article>
+      <div class="cards">
+        <article class="card">
+          <span>☕</span>
+          <h3>Café con calma</h3>
+          <p>Un espacio pensado para disfrutar sin prisas.</p>
+        </article>
 
-      <article class="card">
-        <span>🌿</span>
-        <h3>Ingredientes que suman</h3>
-        <p>Opciones cuidadas para sentirte bien.</p>
-      </article>
+        <article class="card">
+          <span>🥑</span>
+          <h3>Brunch saludable</h3>
+          <p>Platos equilibrados, frescos y con intención.</p>
+        </article>
 
-      <article class="card">
-        <span>✨</span>
-        <h3>Ambiente bonito</h3>
-        <p>Un rincón tranquilo donde apetece volver.</p>
-      </article>
-    </div>
-  </section>
+        <article class="card">
+          <span>🌿</span>
+          <h3>Ingredientes que suman</h3>
+          <p>Opciones cuidadas para sentirte bien.</p>
+        </article>
 
-  <section class="products" id="carta">
-    <p class="section-tag">NUESTRAS ESPECIALIDADES</p>
-    <h2>Sabores con personalidad</h2>
+        <article class="card">
+          <span>✨</span>
+          <h3>Ambiente bonito</h3>
+          <p>Un rincón tranquilo donde apetece volver.</p>
+        </article>
+      </div>
+    </section>
 
-    <div class="product-scroll">
-      <article class="product-card">
-        <img src="img/pink-kanela.jpg" alt="Pink Kanela">
-        <div class="product-info">
-          <h3>Pink Kanela</h3>
-          <p>Bebida suave, dulce y visualmente única.</p>
-        </div>
-      </article>
+    <section class="products" id="carta">
+      <p class="section-tag">NUESTRAS ESPECIALIDADES</p>
+      <h2>Sabores con personalidad</h2>
 
-      <article class="product-card">
-        <img src="img/blue-moon.jpg" alt="Blue Moon">
-        <div class="product-info">
-          <h3>Blue Moon</h3>
-          <p>Color, frescura y una presentación diferente.</p>
-        </div>
-      </article>
+      <div class="product-scroll">
 
-      <article class="product-card">
-        <img src="img/ahumada.jpg" alt="Ahumada">
-        <div class="product-info">
-          <h3>Ahumada</h3>
-          <p>Tostada con personalidad y sabor intenso.</p>
-        </div>
-      </article>
+        <article class="product-card">
+          <img src="img/pink-kanela.jpg" alt="Pink Kanela" />
+          <div class="product-info">
+            <h3>Pink Kanela</h3>
+            <p>Bebida suave, dulce y visualmente única.</p>
+          </div>
+        </article>
 
-      <article class="product-card">
-        <img src="img/dijon.jpg" alt="Dijón">
-        <div class="product-info">
-          <h3>Dijón</h3>
-          <p>Ingredientes frescos y equilibrio perfecto.</p>
-        </div>
-      </article>
+        <article class="product-card">
+          <img src="img/blue-moon.jpg" alt="Blue Moon" />
+          <div class="product-info">
+            <h3>Blue Moon</h3>
+            <p>Color, frescura y una presentación diferente.</p>
+          </div>
+        </article>
 
-      <article class="product-card">
-        <img src="img/caprichosa.jpg" alt="Caprichosa">
-        <div class="product-info">
-          <h3>Caprichosa</h3>
-          <p>Una mezcla elegante y diferente.</p>
-        </div>
-      </article>
-    </div>
-  </section>
+        <article class="product-card">
+          <img src="img/ahumada.jpg" alt="Ahumada" />
+          <div class="product-info">
+            <h3>Ahumada</h3>
+            <p>Tostada con personalidad y sabor intenso.</p>
+          </div>
+        </article>
 
-  <section class="about">
-    <p class="section-tag">KANELA</p>
-    <h2>Un lugar para sentirte bien</h2>
-    <p>
-      Café rico, platos con intención, ingredientes que suman
-      y un ambiente bonito y tranquilo.
-    </p>
-  </section>
+        <article class="product-card">
+          <img src="img/dijon.jpg" alt="Dijón" />
+          <div class="product-info">
+            <h3>Dijón</h3>
+            <p>Ingredientes frescos y equilibrio perfecto.</p>
+          </div>
+        </article>
 
-  <section class="contact" id="contacto">
-    <h2>¿Reservamos?</h2>
-    <p>Te esperamos en Kanela, Pamplona.</p>
+        <article class="product-card">
+          <img src="img/caprichosa.jpg" alt="Caprichosa" />
+          <div class="product-info">
+            <h3>Caprichosa</h3>
+            <p>Una mezcla elegante y diferente.</p>
+          </div>
+        </article>
 
-    <a href="#" class="btn primary">Reservar mesa</a>
-  </section>
+      </div>
+    </section>
+
+    <section class="about">
+      <p class="section-tag">CAFÉ KANELA</p>
+      <h2>Un sitio al que vuelves</h2>
+      <p>
+        Café rico, platos con intención, ingredientes que suman
+        y un ambiente bonito y tranquilo.
+      </p>
+    </section>
+
+    <section class="contact" id="contacto">
+      <h2>¿Reservamos?</h2>
+      <p>Te esperamos en Kanela, Pamplona.</p>
+      <a href="#" class="btn primary">Reservar mesa</a>
+    </section>
+
+  </main>
 
   <script src="js/script.js"></script>
 </body>
