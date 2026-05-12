@@ -3,120 +3,135 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kanela | Cafetería en Pamplona</title>
+  <title>Kanela | Café & Brunch</title>
 
   <link rel="stylesheet" href="css/styles.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <header class="hero">
-    <div class="overlay"></div>
+  <header class="top-header">
+    <a href="#" class="brand">Kanela</a>
 
-    <nav class="navbar">
-      <div class="logo">Kanela</div>
-      <a href="#contacto" class="nav-btn">Reservar</a>
+    <nav>
+      <a href="#especialidades">Carta</a>
+      <a href="#ubicacion">Ubicación</a>
+      <a href="https://wa.me/34NUMEROAQUI" class="reserve-btn">Reservar</a>
     </nav>
-
-    <div class="hero-content">
-      <span class="tag">Café · Brunch · Momentos con calma</span>
-      <h1>Kanela</h1>
-      <p>
-        Un rincón cálido donde el café, las tostadas y los detalles
-        se disfrutan sin prisa.
-      </p>
-      <a href="#especialidades" class="btn">Ver especialidades</a>
-    </div>
   </header>
 
   <main>
 
-    <section class="section esencia">
-      <div class="section-text">
-        <span class="mini-title">Nuestra esencia</span>
-        <h2>Un espacio pensado para sentirte bien</h2>
+    <section class="hero">
+      <div class="hero-img">
+        <img src="img/hero.jpg" alt="Interior de Kanela">
+      </div>
+
+      <div class="hero-content">
+        <span>Café · Brunch · Pamplona</span>
+        <h1>Un rincón bonito para disfrutar sin prisa.</h1>
         <p>
-          En Kanela no solo vienes a tomar café. Vienes a disfrutar de un ambiente
-          tranquilo, platos con intención e ingredientes que suman.
+          Kanela es café, tostadas especiales y un ambiente cálido pensado
+          para esos momentos que saben mejor con calma.
         </p>
+
+        <div class="hero-buttons">
+          <a href="https://wa.me/34NUMEROAQUI" class="btn">Reservar mesa</a>
+          <a href="#especialidades" class="btn btn-outline">Ver especialidades</a>
+        </div>
       </div>
     </section>
 
-    <section class="section especialidades" id="especialidades">
-      <div class="section-header">
-        <span class="mini-title">Brunch & café</span>
-        <h2>Especialidades de la casa</h2>
+    <section class="intro">
+      <span class="section-label">Nuestra esencia</span>
+      <h2>Natural, cálido y con mucho detalle.</h2>
+      <p>
+        Un espacio con alma tranquila, sabores cuidados y una estética pensada
+        para que cada visita se sienta especial.
+      </p>
+    </section>
+
+    <section class="featured" id="especialidades">
+      <div class="section-heading">
+        <span class="section-label">Especialidades</span>
+        <h2>Lo que apetece en Kanela</h2>
       </div>
 
-      <div class="cards">
-        <article class="card">
-          <img src="img/ahumada.jpg" alt="Tostada Ahumada">
-          <div>
-            <h3>Ahumada</h3>
-            <p>Salmón, pepino, brotes y una mezcla fresca llena de sabor.</p>
-          </div>
-        </article>
+      <article class="plate plate-large">
+        <div class="plate-img">
+          <img src="img/ahumada.jpg" alt="Ahumada">
+        </div>
+        <div class="plate-info">
+          <span>Tostada especial</span>
+          <h3>Ahumada</h3>
+          <p>
+            Una propuesta fresca, elegante y llena de sabor. Perfecta para
+            empezar el día o disfrutar de un brunch con calma.
+          </p>
+        </div>
+      </article>
 
-        <article class="card">
-          <img src="img/dijon.jpg" alt="Tostada Dijon">
-          <div>
+      <div class="plate-grid">
+        <article class="plate">
+          <div class="plate-img">
+            <img src="img/dijon.jpg" alt="Dijon">
+          </div>
+          <div class="plate-info">
+            <span>Brunch</span>
             <h3>Dijon</h3>
-            <p>Una tostada equilibrada, intensa y perfecta para empezar el día.</p>
+            <p>Equilibrada, sabrosa y con ese punto diferente que la hace especial.</p>
           </div>
         </article>
 
-        <article class="card">
-          <img src="img/caprichosa.jpg" alt="Tostada Caprichosa">
-          <div>
+        <article class="plate">
+          <div class="plate-img">
+            <img src="img/caprichosa.jpg" alt="Caprichosa">
+          </div>
+          <div class="plate-info">
+            <span>Favorita</span>
             <h3>Caprichosa</h3>
-            <p>Jamón, pera, cremosidad y ese toque especial que la hace única.</p>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="img/pink-kanela.jpg" alt="Pink Kanela">
-          <div>
-            <h3>Pink Kanela</h3>
-            <p>Una bebida fresca, bonita y diferente para disfrutar sin prisa.</p>
+            <p>Una mezcla delicada, cremosa y con personalidad propia.</p>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="section frase">
-      <h2>“Café rico, platos con intención y ambiente bonito.”</h2>
-      <p>Kanela es ese sitio al que vuelves porque te hace sentir en casa.</p>
-    </section>
-
-    <section class="section galeria">
-      <div class="section-header">
-        <span class="mini-title">Galería</span>
-        <h2>Sabores que entran por los ojos</h2>
+    <section class="drink-section">
+      <div class="drink-text">
+        <span class="section-label">Bebida especial</span>
+        <h2>Pink Kanela</h2>
+        <p>
+          Una bebida fresca, visual y diferente. De esas que entran por los ojos
+          y se disfrutan todavía más en buena compañía.
+        </p>
+        <a href="https://wa.me/34NUMEROAQUI" class="btn">Quiero probarla</a>
       </div>
 
-      <div class="gallery-grid">
-        <img src="img/ahumada.jpg" alt="Ahumada">
-        <img src="img/dijon.jpg" alt="Dijon">
-        <img src="img/caprichosa.jpg" alt="Caprichosa">
+      <div class="drink-img">
         <img src="img/pink-kanela.jpg" alt="Pink Kanela">
       </div>
     </section>
 
-    <section class="section contacto" id="contacto">
-      <span class="mini-title">Visítanos</span>
-      <h2>Café Kanela</h2>
+    <section class="quote">
+      <p>“Café rico, ambiente bonito y platos hechos para disfrutar.”</p>
+    </section>
 
-      <p>C/ Fuente del Hierro 21, trasera · Pamplona</p>
-      <p>Lunes a viernes: 8:30 - 13:30 / 16:30 - 20:00</p>
-      <p>Sábado y domingo: 9:30 - 14:30 / 17:00 - 20:00</p>
+    <section class="location" id="ubicacion">
+      <div>
+        <span class="section-label">Dónde estamos</span>
+        <h2>Ven a Kanela</h2>
+        <p>C/ Fuente del Hierro 21, trasera · Pamplona</p>
+        <p>Lunes a viernes: 8:30 - 13:30 / 16:30 - 20:00</p>
+        <p>Sábado y domingo: 9:30 - 14:30 / 17:00 - 20:00</p>
 
-      <div class="buttons">
-        <a href="#" class="btn">Reservar por WhatsApp</a>
-        <a href="#" class="btn secondary">Ver ubicación</a>
+        <div class="location-buttons">
+          <a href="https://wa.me/34NUMEROAQUI" class="btn">Reservar por WhatsApp</a>
+          <a href="#" class="btn btn-outline dark">Ver en Google Maps</a>
+        </div>
       </div>
     </section>
 

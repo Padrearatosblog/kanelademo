@@ -1,18 +1,24 @@
-const cards = document.querySelectorAll(".card");
+const elements = document.querySelectorAll(
+  ".intro, .section-heading, .plate, .drink-text, .drink-img, .quote, .location > div"
+);
+
+elements.forEach((element) => {
+  element.classList.add("reveal");
+});
 
 const observer = new IntersectionObserver(
-  entries => {
-    entries.forEach(entry => {
+  (entries) => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("show");
+        entry.target.classList.add("visible");
       }
     });
   },
   {
-    threshold: 0.2,
+    threshold: 0.15,
   }
 );
 
-cards.forEach(card => {
-  observer.observe(card);
+elements.forEach((element) => {
+  observer.observe(element);
 });
